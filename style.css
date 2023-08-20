@@ -1,0 +1,61 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+button.primaryBtn {
+    background-color: #e527b2;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+body {
+    /* background-color: #f8f8f8 !important; */
+}
+input#coupon_code {
+    border: 1px solid #c6c6c6;
+    border-radius: 6px 0px 0px 6px;
+}
+button#coupon_apply_btn {
+    border-radius: 0px 6px 6px 0px;
+}
+
+/* Product Images */
+.card figure img {
+    height: 130px;
+}
+
+/* Rating Styles */
+.customRating {
+    display: flex;
+    justify-content: center;
+}
+.customRating > div {
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+}
+.rating_filled {
+    background-image: url("./images/rating_filled.png");
+}
+.rating_empty {
+    background-image: url("./images/rating_empty.png");
+}
+/* Rating Styles Ended */
+/* Cart Style */
+#total_price,
+#discount,
+#total {
+    color: #888888;
+}
+ol {
+    /* list-style: decimal inside; */
+}
+main {
+    padding-bottom: 250px;
+}
+/*  */
+.kitchenware {
+    /* border: 1px solid rgba(255, 0, 0, 0.063); */
+}
+.cart {
+    /* border: 1px solid rgba(0, 128, 0, 0.077); */
+}
