@@ -104,5 +104,3 @@ const btnEnable = (conditionalAmount, targetBtn) => {
 };
 
 const btnDisable = (targetBtn) => targetBtn.setAttribute("disabled", "disabled");
-
-// Test

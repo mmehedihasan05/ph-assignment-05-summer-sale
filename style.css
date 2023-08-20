@@ -3,13 +3,9 @@ html {
 }
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: #f8f8f8 !important;
 }
-button.primaryBtn {
-    /* background-color: #e527b2; */
-    /* color: white; */
-    /* padding: 8px 15px; */
-    /* border-radius: 6px; */
-}
+
 .btn-primary {
     background-color: #e527b2;
     border: 1px solid #e527b2;
@@ -20,6 +16,7 @@ button.primaryBtn {
     border: 1px solid #da25aa;
     color: white;
 }
+
 .allProduct .product,
 #scroll-to-bottom {
     transform: scale(1);
@@ -32,9 +29,7 @@ button.primaryBtn {
 #scroll-to-bottom:active {
     transform: scale(0.85);
 }
-body {
-    background-color: #f8f8f8 !important;
-}
+
 input#coupon_code {
     border: 1px solid #c6c6c6;
     border-radius: 6px 0px 0px 6px;
@@ -45,7 +40,6 @@ button#coupon_apply_btn {
 button.btn[disabled="disabled"] {
     border: 1px solid transparent;
     cursor: not-allowed;
-    /* pointer-events: auto; */
 }
 /* Product Images */
 .card figure img {
@@ -74,17 +68,4 @@ button.btn[disabled="disabled"] {
 #discount,
 #total {
     color: #888888;
-}
-ol {
-    /* list-style: decimal inside; */
-}
-main {
-    padding-bottom: 250px;
-}
-/*  */
-.kitchenware {
-    /* border: 1px solid rgba(255, 0, 0, 0.063); */
-}
-.cart {
-    /* border: 1px solid rgba(0, 128, 0, 0.077); */
 }
