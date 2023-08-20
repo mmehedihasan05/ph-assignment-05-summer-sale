@@ -1,14 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Open Sans", sans-serif;
 }
 button.primaryBtn {
+    /* background-color: #e527b2; */
+    /* color: white; */
+    /* padding: 8px 15px; */
+    /* border-radius: 6px; */
+}
+.btn-primary {
     background-color: #e527b2;
+    border: 1px solid #e527b2;
     color: white;
-    padding: 8px 15px;
-    border-radius: 6px;
+}
+.btn-primary:hover {
+    background-color: #da25aa;
+    border: 1px solid #da25aa;
+    color: white;
+}
+.allProduct .product,
+#scroll-to-bottom {
+    transform: scale(1);
+    transition: 0.15s all;
+}
+.allProduct .product:active {
+    transform: scale(1.05);
+}
+
+#scroll-to-bottom:active {
+    transform: scale(0.85);
 }
 body {
-    /* background-color: #f8f8f8 !important; */
+    background-color: #f8f8f8 !important;
 }
 input#coupon_code {
     border: 1px solid #c6c6c6;
@@ -17,7 +42,11 @@ input#coupon_code {
 button#coupon_apply_btn {
     border-radius: 0px 6px 6px 0px;
 }
-
+button.btn[disabled="disabled"] {
+    border: 1px solid transparent;
+    cursor: not-allowed;
+    /* pointer-events: auto; */
+}
 /* Product Images */
 .card figure img {
     height: 130px;

@@ -19,35 +19,36 @@
 
 <body class="bg-[#aaaaaa]">
     <header class="bg-[#F9F6E2]">
-        <div class="w-full md:max-w-screen-xl mx-auto
-                grid grid-cols-2
-                py-16">
-            <div class="texts self-center text-center space-y-8">
-                <h3 class="font-medium text-3xl">---SALE FEVER---</h3>
-                <h1 class="font-bold text-5xl">Purchase TK 200 or <br> above & get <span class="text-[#e527b2]">20%
-                        off</span></h1>
+        <div class="w-full md:max-w-screen-xl mx-auto 
+                px-2 md:px-6 lg:px-10 py-4 md:py-12 lg:py-16
+                grid grid-cols-1 md:grid-cols-2">
+            <div class="self-center text-center space-y-4 md:space-y-8">
+                <h3 class="font-medium text-xl md:text-2xl lg:text-3xl">---SALE FEVER---</h3>
+                <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">Purchase TK 200 or <br> above & get <span
+                        class="text-[#e527b2]">20% off</span></h1>
                 <div class="text-base font-medium
                         flex justify-center items-center gap-3">
                     <p class="font-medium">Use Promo Code</p>
-                    <button class="primaryBtn">SELL200</button>
+                    <button class="btn btn-primary no-animation">SELL200</button>
                 </div>
             </div>
-            <div class="image w-3/4 justify-self-end">
+            <div class="image w-[90%] justify-self-center md:justify-self-end">
                 <img src="images/Summer 1.png" alt="Banner Image">
             </div>
         </div>
     </header>
-    <main class="pt-24
-            w-full md:max-w-screen-xl mx-auto
-            grid grid-cols-4 gap-5">
-        <section class="col-span-3">
+    <main class="w-full md:max-w-screen-xl mx-auto 
+            px-4 md:px-6 lg:px-10 py-6 md:py-12 lg:py-16
+            grid grid-cols-1 md:grid-cols-6 lg:grid-cols-4 gap-4">
+        <section class="md:col-span-4 lg:col-span-3 space-y-8 lg:space-y-12">
             <!-- Kitchenware -->
             <div class="kitchenware">
-                <h1 class="text-4xl font-semibold mb-6">Kitchenware</h1>
-                <div class="products grid grid-cols-3 gap-5">
+                <h1 class="text-3xl lg:text-4xl font-semibold mb-6">Kitchenware</h1>
+                <div class="allProduct grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-4 lg:gap-4">
                     <!-- Product 01 -->
-                    <div class="card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
-                        <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod1.png" alt="Shoes" /></figure>
+                    <div class="product card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
+                        <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod1.png" alt="Shoes" />
+                        </figure>
                         <div class="card-body grid">
                             <div class="customRating">
                                 <div class="rating_filled"></div>
@@ -56,37 +57,40 @@
                                 <div class="rating_empty"></div>
                                 <div class="rating_empty"></div>
                             </div>
-                            <h2 id="product_title" class="card-title justify-center text-center">Wooden Spoons</h2>
+                            <h2 id="product_title" class="card-title justify-center text-center text-lg">Wooden Spoons
+                            </h2>
                             <p id="product_price" class="text-center">39.00 TK</p>
                         </div>
                     </div>
                     <!-- Product 02 -->
-                    <div class="card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
+                    <div class="product card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
                         <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod2.png" alt="Shoes" /></figure>
                         <div class="card-body grid">
                             <div class="customRating">
                                 <div class="rating_filled"></div>
                                 <div class="rating_filled"></div>
-                                <div class="rating_filled"></div>
+                                <div class="rating_empty"></div>
                                 <div class="rating_empty"></div>
                                 <div class="rating_empty"></div>
                             </div>
-                            <h2 id="product_title" class="card-title justify-center text-center">Wooden Board</h2>
+                            <h2 id="product_title" class="card-title justify-center text-center text-lg">Cutting Board
+                            </h2>
                             <p id="product_price" class="text-center">25.00 TK</p>
                         </div>
                     </div>
                     <!-- Product 03 -->
-                    <div class="card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
+                    <div class="product card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
                         <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod3.png" alt="Shoes" /></figure>
                         <div class="card-body grid">
                             <div class="customRating">
                                 <div class="rating_filled"></div>
                                 <div class="rating_filled"></div>
                                 <div class="rating_filled"></div>
-                                <div class="rating_empty"></div>
+                                <div class="rating_filled"></div>
                                 <div class="rating_empty"></div>
                             </div>
-                            <h2 id="product_title" class="card-title justify-center text-center">Home Cooker</h2>
+                            <h2 id="product_title" class="card-title justify-center text-center text-lg">Home Cooker
+                            </h2>
                             <p id="product_price" class="text-center">49.00 TK</p>
                         </div>
                     </div>
@@ -94,46 +98,180 @@
             </div>
             <!-- Sportswear -->
             <div class="sportswear">
+                <h1 class="text-3xl lg:text-4xl font-semibold mb-6">Sportswear</h1>
+                <div class="allProduct grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-4 lg:gap-4">
+                    <!-- Product 01 -->
+                    <div class="product card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
+                        <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod4.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body grid">
+                            <div class="customRating">
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_empty"></div>
+                                <div class="rating_empty"></div>
+                            </div>
+                            <h2 id="product_title" class="card-title justify-center text-center text-lg">Sports Back Cap
+                            </h2>
+                            <p id="product_price" class="text-center">49.00 TK</p>
+                        </div>
+                    </div>
+                    <!-- Product 02 -->
+                    <div class="product card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
+                        <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod5.png" alt="Shoes" /></figure>
+                        <div class="card-body grid">
+                            <div class="customRating">
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_empty"></div>
+                                <div class="rating_empty"></div>
+                                <div class="rating_empty"></div>
+                            </div>
+                            <h2 id="product_title" class="card-title justify-center text-center text-lg">Full Jersey Set
+                            </h2>
+                            <p id="product_price" class="text-center">69.00 TK</p>
+                        </div>
+                    </div>
+                    <!-- Product 03 -->
+                    <div class="product card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
+                        <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod6.png" alt="Shoes" /></figure>
+                        <div class="card-body grid">
+                            <div class="customRating">
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_empty"></div>
+                            </div>
+                            <h2 id="product_title" class="card-title justify-center text-center text-lg">Sports Shoes
+                            </h2>
+                            <p id="product_price" class="text-center">159.00 TK</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Furniture -->
             <div class="furniture">
+                <h1 class="text-3xl lg:text-4xl font-semibold mb-6">Furniture</h1>
+                <div class="allProduct grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-4 lg:gap-4">
+                    <!-- Product 01 -->
+                    <div class="product card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
+                        <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod7.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body grid">
+                            <div class="customRating">
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_empty"></div>
+                                <div class="rating_empty"></div>
+                            </div>
+                            <h2 id="product_title" class="card-title justify-center text-center text-lg">Relax Chair
+                            </h2>
+                            <p id="product_price" class="text-center">185.00 TK</p>
+                        </div>
+                    </div>
+                    <!-- Product 02 -->
+                    <div class="product card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
+                        <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod8.png" alt="Shoes" /></figure>
+                        <div class="card-body grid">
+                            <div class="customRating">
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_empty"></div>
+                                <div class="rating_empty"></div>
+                                <div class="rating_empty"></div>
+                            </div>
+                            <h2 id="product_title" class="card-title justify-center text-center text-lg">Children Chair
+                            </h2>
+                            <p id="product_price" class="text-center">299.00 TK</p>
+                        </div>
+                    </div>
+                    <!-- Product 03 -->
+                    <div class="product card p-4 bg-base-100 hover:shadow-xl cursor-pointer">
+                        <figure class="bg-[#f3f3f3] rounded-xl py-6"><img src="images/prod9.png" alt="Shoes" /></figure>
+                        <div class="card-body grid">
+                            <div class="customRating">
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_filled"></div>
+                                <div class="rating_empty"></div>
+                            </div>
+                            <h2 id="product_title" class="card-title justify-center text-center text-lg">Flexible Sofa
+                            </h2>
+                            <p id="product_price" class="text-center">339.00 TK</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="cart">
+        <section class="cart md:col-span-2 lg:col-span-1">
             <h1 class="text-4xl font-semibold mb-6 invisible">|</h1>
             <div class="space-y-5">
                 <!--  -->
                 <!-- Coupon Part -->
                 <div class="p-4 bg-base-100 rounded-lg space-y-4">
-                    <p class="font-medium">Have coupon?</p>
+                    <p class="font-medium text-lg">Have coupon?</p>
                     <div class="grid grid-cols-3">
-                        <input id="coupon_code" class="col-span-2 p-4" type="text" placeholder="Coupon code" name="">
-                        <button id="coupon_apply_btn" class="primaryBtn">Apply</button>
+                        <input id="coupon_code" class="col-span-2 px-2 py-3" type="text" placeholder="Coupon code"
+                            name="">
+                        <button id="coupon_apply_btn" disabled="disabled" class="btn btn-primary h-auto">Apply</button>
                     </div>
                 </div>
                 <!--  -->
                 <!-- Product and Price Details -->
-                <div class="p-5 bg-base-100 rounded-lg space-y-4 text-[#111111] font-medium text-lg">
+                <div class="p-4 bg-base-100 rounded-lg space-y-4 text-[#111111] font-medium text-base">
+                    <div id="empty_cart" class="text-[#888888] text-center text-sm">No Product Added! <br> Click on
+                        products to add. </div>
                     <!-- Product List -->
                     <ol id="cart_products" class="list-decimal list-inside space-y-2">
-                        <li>Home Cooker</li>
-                        <li>Sport Shoe</li>
-                        <li>Home Cooker</li>
+                        <!--  -->
+                        <!-- <li>hasan</li> -->
                     </ol>
                     <hr>
-                    <div class="price-details space-y-2">
-                        <p>Total Price : <span id="total_price">257.00 TK</span></p>
-                        <p>Discount : <span id="discount">51.40 TK</span></p>
-                        <p>Total : <span id="total">205.60 TK</span></p>
+                    <div class="price-details space-y-2 text-lg">
+                        <p>Total Price : <span id="total_price">00.00 TK</span></p>
+                        <p>Discount : <span id="discount">00.00 TK</span></p>
+                        <p>Total : <span id="total">00.00 TK</span></p>
                     </div>
                     <hr>
-                    <button class="primaryBtn w-full">Make Purchase</button>
+                    <button id="make_purchase" disabled="disabled" class="btn btn-primary w-full"
+                        onclick="my_modal_1.showModal()">Make Purchase</button>
                 </div>
             </div>
         </section>
     </main>
     <footer></footer>
+    <!-- Scroll to bottom button -->
+    <div class="grid justify-end fixed right-4 bottom-4 z-[2] md:hidden">
+        <div id="scroll-to-bottom" class=" h-14 w-14 rounded-full bg-slate-300 p-3 ">
+            <img src=" images/cart_icon.png" alt="">
+        </div>
+    </div>
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_1" class="modal">
+        <form method="dialog" class="modal-box p-20">
+            <div class="grid justify-center text-center">
+                <img class="justify-self-center" src="images/congo.png" alt="congratulations">
+                <h1 class="text-4xl font-bold pt-9 pb-2">Congratulations</h1>
+                <p class="pb-4 text-[#111111b3]">You've purchased the products.</p>
+            </div>
+            <div class="modal-action justify-center">
+                <!-- if there is a button in form, it will close the modal -->
+                <button id="reset_all" class="btn btn-primary px-8 capitalize">Go Home</button>
+            </div>
+        </form>
+    </dialog>
 </body>
+<!-- The button to open modal -->
 <script src="script.js"></script>
 
 </html>
+<!-- 
+#help
+small ডিভাইসের জন্য আমি চাচ্ছিলাম একটা cart আইকন সবসময় ভেসে থাকবে এবং ওটায় ক্লিক করলে modal হিসেবে cart টা শো করবে। বাট এতে করে Make Purchase এ ক্লিক করলে যে Modal টা শো করার কথা সেটা শো করানোর কোন ওয়ে মাথায় আসছে না। 
+তাই small ডিভাইসের ক্ষেত্রে Make Purchase এর onClick মডাল এর পরিবর্তে অন্য অন্যভাবে করলে সমস্যা হবে? 
+
+ -->
