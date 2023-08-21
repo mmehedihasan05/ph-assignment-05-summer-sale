@@ -24,6 +24,7 @@ allProducts.forEach((product) => {
             clicked_Element !== product ? clicked_Element.closest(".product") : event.target;
 
         addToCart(productParent);
+        productAddAnimation();
     });
 });
 
@@ -104,3 +105,11 @@ const btnEnable = (conditionalAmount, targetBtn) => {
 };
 
 const btnDisable = (targetBtn) => targetBtn.setAttribute("disabled", "disabled");
+
+const productAddAnimation = () => {
+    // This will animate after adding a product in the cart.
+    scrollToBottom.classList.add("animate");
+    setTimeout(() => {
+        scrollToBottom.classList.remove("animate");
+    }, 300);
+};

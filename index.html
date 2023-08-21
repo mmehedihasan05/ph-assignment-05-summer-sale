@@ -17,7 +17,7 @@
 </head>
 <!-- bg-[#f8f8f8] -->
 
-<body class="bg-[#aaaaaa]">
+<body class="bg-[#f8f8f8]">
     <header class="bg-[#F9F6E2]">
         <div class="w-full md:max-w-screen-xl mx-auto 
                 px-2 md:px-6 lg:px-10 py-4 md:py-12 lg:py-16
@@ -215,8 +215,8 @@
                 <div class="p-4 bg-base-100 rounded-lg space-y-4">
                     <p class="font-medium text-lg">Have coupon?</p>
                     <div class="grid grid-cols-3">
-                        <input id="coupon_code" class="col-span-2 px-2 py-3" type="text" placeholder="Coupon code"
-                            name="">
+                        <input id="coupon_code" class="col-span-2 px-2 py-3 rounded-l-md border border-[#c6c6c6]"
+                            type="text" placeholder="Coupon code" name="">
                         <button id="coupon_apply_btn" disabled="disabled" class="btn btn-primary h-auto">Apply</button>
                     </div>
                 </div>
@@ -227,14 +227,12 @@
                         products to add. </div>
                     <!-- Product List -->
                     <ol id="cart_products" class="list-decimal list-inside space-y-2">
-                        <!--  -->
-                        <!-- <li>hasan</li> -->
                     </ol>
                     <hr>
                     <div class="price-details space-y-2 text-lg">
-                        <p>Total Price : <span id="total_price">00.00 TK</span></p>
-                        <p>Discount : <span id="discount">00.00 TK</span></p>
-                        <p>Total : <span id="total">00.00 TK</span></p>
+                        <p>Total Price : <span id="total_price" class="text-[#888888]">00.00 TK</span></p>
+                        <p>Discount : <span id="discount" class="text-[#888888]">00.00 TK</span></p>
+                        <p>Total : <span id="total" class="text-[#888888]">00.00 TK</span></p>
                     </div>
                     <hr>
                     <button id="make_purchase" disabled="disabled" class="btn btn-primary w-full"
@@ -246,7 +244,8 @@
     <footer></footer>
     <!-- Scroll to bottom button -->
     <div class="grid justify-end fixed right-4 bottom-4 z-[2] md:hidden">
-        <div id="scroll-to-bottom" class=" h-14 w-14 rounded-full bg-slate-300 p-3 ">
+        <!-- red bg-rose-200 -->
+        <div id="scroll-to-bottom" class=" h-14 w-14 rounded-full bg-rose-200 p-3 ">
             <img src=" images/cart_icon.png" alt="">
         </div>
     </div>
@@ -255,7 +254,7 @@
         <form method="dialog" class="modal-box p-20">
             <div class="grid justify-center text-center">
                 <img class="justify-self-center" src="images/congo.png" alt="congratulations">
-                <h1 class="text-4xl font-bold pt-9 pb-2">Congratulations</h1>
+                <h1 class="text-3xl md:text-4xl font-bold pt-9 pb-2">Congratulations</h1>
                 <p class="pb-4 text-[#111111b3]">You've purchased the products.</p>
             </div>
             <div class="modal-action justify-center">
