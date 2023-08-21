@@ -1,6 +1,9 @@
 const allProducts = document.querySelectorAll(".product");
 
 const couponApplyBtn = document.querySelector("button#coupon_apply_btn");
+const couponSuccess = document.querySelector("#coupon_success");
+const couponApplied = document.querySelector("#coupon_applied");
+const couponInvalid = document.querySelector("#coupon_invalid");
 
 const emptyAlertElem = document.querySelector("#empty_cart");
 const cartList = document.querySelector("ol#cart_products");
@@ -31,10 +34,22 @@ allProducts.forEach((product) => {
 couponApplyBtn.addEventListener("click", () => {
     let couponCode = document.getElementById("coupon_code").value;
 
-    if (subTotal >= 200 && couponCode === "SELL200") {
+    if (isDiscountApplied) {
+        couponApplied.classList.remove("hidden");
+        couponSuccess.classList.add("hidden");
+        couponInvalid.classList.add("hidden");
+    } else if (subTotal >= 200 && couponCode === "SELL200") {
+        // sucess
         isDiscountApplied = true;
 
         cartPriceUpdate();
+
+        couponSuccess.classList.remove("hidden");
+        couponInvalid.classList.add("hidden");
+    } else {
+        // Invalid
+        couponInvalid.classList.remove("hidden");
+        couponSuccess.classList.add("hidden");
     }
 });
 
@@ -50,6 +65,9 @@ resetAll.addEventListener("click", () => {
     btnDisable(couponApplyBtn);
     btnDisable(makePurchaseBtn);
 
+    couponApplied.classList.add("hidden");
+    couponSuccess.classList.add("hidden");
+    couponInvalid.classList.add("hidden");
     document.getElementById("coupon_code").value = "";
 });
 
