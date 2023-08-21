@@ -22,6 +22,7 @@ body {
     transform: scale(1);
     transition: 0.15s all;
 }
+
 .allProduct .product:active {
     transform: scale(1.05);
 }
